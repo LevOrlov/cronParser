@@ -21,6 +21,7 @@ func parse(cronString string) ([]CronField, string) {
 		{"month", []int{}},
 		{"day of week", []int{}},
 	}
+
 	fields[0].Values = parseField(parts[0], 0, 59)
 	fields[1].Values = parseField(parts[1], 0, 23)
 	fields[2].Values = parseField(parts[2], 1, 31)
